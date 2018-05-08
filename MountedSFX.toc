@@ -1,0 +1,9 @@
+## Interface: 70300
+## Title: Mounted SFX 0.0.1
+## Author: Darken5
+## Version: 0.0.1
+## Notes: Mounted SFX plays sounds for mounts.
+## SavedVariablesPerCharacter: MountedSFXOptions
+
+Core.lua
+Sounds.lua
