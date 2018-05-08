@@ -3,8 +3,6 @@
 -----------------------------
 
 function MountedSFX_OnLoad()
-	MountedSFXOptions = {}
-	MountedSFXOptions.Enabled =  {}
 	hooksecurefunc("JumpOrAscendStart"	, MountedSFX_JumpOrAscendStart);
 
 	-- Slash Commands
@@ -19,7 +17,7 @@ end
 function MountedSFX_Command(Command)
 	local Lower = strlower(Command)
 	if Lower == "" or Lower == nil then
-		print ( |cffff0000 .. "Error: " .. |cff0000ff .. "Slash command for MountedSFX is " .. |cffecda90 .. "/msfx on" .. |cff0000ff .. " or " .. |cffecda90 .. "/msfx off" );
+		print ( "|cffff0000Error: |cff0000ffSlash command for MountedSFX is |cffecda90/msfx on|cff0000ff or |cffecda90/msfx off" );
 	elseif Lower == "on" then
 		MountedSFX_Enable = true
 	elseif Lower == "off" then
@@ -30,7 +28,7 @@ end
 --'	MountedSFX Event: Howl's, Growl's, Roar's and Chocobo Kweh!! 
 --'==========================================================================================	
 function MountedSFX_JumpOrAscendStart()
-	if IsMounted("player") and MountedSFXOptions.Enabled == true then
+	if IsMounted("player") then
 		currentSpeed, runSpeed, flightSpeed, swimSpeed = GetUnitSpeed("player");
 		if UnitAura("player", "Running Wild") ~= nil then
 			if currentSpeed == 0 then
@@ -52,16 +50,18 @@ function MountedSFX_JumpOrAscendStart()
 				end
 			until ( active == true ) 
 			if string.match(mountName,'strider') then
-				MountedSFX_PlayFile( FelsaberRoar );
+				if currentSpeed == 0 then
+					MountedSFX_PlayFile( KwehS );
+				else
+					MountedSFX_PlayFile( KwehM );
+				end
 			end
 		end
 	end
 end
 
 function MountedSFX_PlayFile( file )
-	if( FinalFantasylizationOptions.Enabled == true ) and ( FinalFantasylizationOptions.Sound == true ) then
-		if( file ~= nil ) then
-			PlaySoundFile( S .. file, "Master" )
-		end
+	if( file ~= nil ) then
+		PlaySoundFile( S .. file, "Master" )
 	end
 end

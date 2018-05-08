@@ -3,19 +3,18 @@
 --		 Sound File		   --
 -----------------------------
 
-
-
--- File Location
+-- Sound File Location
 	S = "Interface\\AddOns\\MountedSFX\\Sounds\\"
 		
 -- Kweh ( for Strider mounts)
-	Kweh = "kweh.mp3" -- Chocobo Kweh Sound
+	KwehS = "KwehStationary.mp3"	-- Chocobo Kweh Sound ( while stationary )
+	KwehM = "KwehMoving.mp3" 		-- Chocobo Kweh Sound ( while moving )
 	
 -- Howl's
-	-- Worgen "Running Wild"
+	-- Worgen "Running Wild" ( while stationary )
 		WorgenHowl = "WorgenHowl.mp3"
 			
 -- Roar's
-	-- Felsaber
+	-- Felsaber ( while stationary )
 		FelsaberRoar = "FelsaberRoar.mp3"
 	

@@ -3,7 +3,7 @@
 ## Author: Darken5
 ## Version: 0.0.1
 ## Notes: Mounted SFX plays sounds for mounts.
-## SavedVariablesPerCharacter: MountedSFXOptions
+## SavedVariablesPerCharacter: MountedSFX_On
 
-Core.lua
-Sounds.lua
+MountedSFX.xml
+Sounds\Sounds.lua
