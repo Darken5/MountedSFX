@@ -1,5 +1,5 @@
 -- Mounted SFX  by Darken5 --
---		Version 0.0.1	   --
+--		Version 0.1.0	   --
 --		 Sound File		   --
 -----------------------------
 
@@ -18,3 +18,9 @@
 	-- Felsaber ( while stationary )
 		FelsaberRoar = "FelsaberRoar.mp3"
 	
+-- Neigh's
+	-- Horses
+		Horse1 = "Horse1.mp3"
+
+-- Motorcycle's
+	MotorcycleRev1 = "MotorcycleRev1.mp3"

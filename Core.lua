@@ -1,5 +1,5 @@
 -- Mounted SFX  by Darken5 --
---		Version 0.0.1	   --
+--		Version 0.1.0	   --
 -----------------------------
 
 function MountedSFX_OnLoad()
@@ -29,7 +29,7 @@ end
 --'==========================================================================================	
 function MountedSFX_JumpOrAscendStart()
 	if IsMounted("player") then
-		currentSpeed, runSpeed, flightSpeed, swimSpeed = GetUnitSpeed("player");
+		currentSpeed, _, _, _ = GetUnitSpeed("player");
 		if UnitAura("player", "Running Wild") ~= nil then
 			if currentSpeed == 0 then
 				MountedSFX_PlayFile( WorgenHowl );
@@ -39,22 +39,27 @@ function MountedSFX_JumpOrAscendStart()
 				MountedSFX_PlayFile( FelsaberRoar );
 			end
 		else
-			local mountcount = C_MountJournal.GetNumDisplayedMounts()
-			local mountName = nil
 			i = 1
 			repeat 
-				local creatureName, spellID, _, active, _, _, _, _, _, _, _, mountID = C_MountJournal.GetMountInfoByID(i)
+				creatureName, spellID, _, active, _, _, _, _, _, _, _, mID = C_MountJournal.GetMountInfoByID(i)
 				i = i + 1
-				if type(creatureName) == "string" then
-					mountName = string.lower(creatureName)
-				end
-			until ( active == true ) 
-			if string.match(mountName,'strider') then
+			until ( active == true )
+		-- Debug 
+			print ( creatureName .. ": SpellID - " .. spellID .. ", mountID - " .. mID )
+		-- End Debug
+			local MType = MountedID[spellID]
+			if MType == "horse" then
+				MountedSFX_PlayFile( Horse1 );
+			elseif MType == "hawkstrider" then
 				if currentSpeed == 0 then
 					MountedSFX_PlayFile( KwehS );
 				else
 					MountedSFX_PlayFile( KwehM );
 				end
+			elseif MType == "motorcycle" then
+				MountedSFX_PlayFile( MotorcycleRev1 );
+			elseif MountedID[spellID] == nil then
+				return
 			end
 		end
 	end
