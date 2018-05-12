@@ -1,5 +1,5 @@
 -- Mounted SFX  by Darken5 --
---		Version 0.1.0	   --
+--		Version 0.1.1	   --
 --		 Sound File		   --
 -----------------------------
 
@@ -21,6 +21,9 @@
 -- Neigh's
 	-- Horses
 		Horse1 = "Horse1.mp3"
+
+-- Mechanostrider's
+	Cuckoo = "Cuckoo.mp3"
 
 -- Motorcycle's
 	MotorcycleRev1 = "MotorcycleRev1.mp3"

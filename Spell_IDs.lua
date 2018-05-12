@@ -1,5 +1,7 @@
 -- List of spellID's for mounts by type
 MountedID = {
+	-- Demon Hunter's Felsaber
+	[ 200175 ] 	= "felsaber",
 	-- Horses
 	[ 255695 ] 	= "horse", -- Seabraid Stallion
 	[ 103196 ] 	= "horse", -- Swift Mountain Horse
@@ -48,6 +50,20 @@ MountedID = {
 	[ 66091 ] 	= "hawkstrider", -- Sunreaver Hawkstrider
 	[ 65639 ] 	= "hawkstrider", -- Swift Red Hawkstrider
 	[ 63642 ] 	= "hawkstrider", -- Silvermoon Hawkstrider
+	-- Mechanostriders
+	[ 183889 ] 	= "mechanostrider", -- Vicious War Mechanostrider
+	[ 10969 ] 	= "mechanostrider", -- Blue Mechanostrider
+	[ 10873 ] 	= "mechanostrider", -- Red Mechanostrider
+	[ 17453 ] 	= "mechanostrider", -- Green Mechanostrider
+	[ 17454 ] 	= "mechanostrider", -- Unpainted Mechanostrider
+	[ 17459 ] 	= "mechanostrider", -- Icy Blue Mechanostrider Mod A
+	[ 15779 ] 	= "mechanostrider", -- White Mechanostrider Mod B
+	[ 22719 ] 	= "mechanostrider", -- Black Battlestrider
+	[ 23225 ] 	= "mechanostrider", -- Swift Green Mechanostrider
+	[ 65642 ] 	= "mechanostrider", -- Turbostrider
+	[ 23223 ] 	= "mechanostrider", -- Swift White Mechanostrider
+	[ 23222 ] 	= "mechanostrider", -- Swift Yellow Mechanostrider
+	[ 63638 ] 	= "mechanostrider", -- Gnomeregan Mechanostrider
 	-- Motorcycles
 	[ 60424 ] 	= "motorcycle", -- Mekgineer's Chopper
 	[ 55531 ] 	= "motorcycle", -- Mechano-Hog
