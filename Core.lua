@@ -38,7 +38,7 @@ end
 --'	MountedSFX Event: Howl's, Growl's, Roar's and Chocobo Kweh!! 
 --'==========================================================================================	
 function MountedSFX_JumpOrAscendStart()
-	if IsMounted("player") and MountedSFX_Enable == true then
+	if IsMounted("player") and not UnitOnTaxi("player") and MountedSFX_Enable == true then
 		currentSpeed, _, _, _ = GetUnitSpeed("player");
 		if UnitAura("player", "Running Wild") ~= nil then
 			if currentSpeed == 0 then
