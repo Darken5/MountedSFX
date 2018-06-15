@@ -74,4 +74,35 @@ MountedID = {
 	[ 87090 ] 	= "motorcycle", -- Goblin Trike
 	[ 171845 ] 	= "motorcycle", -- Warlord's Deathwheel
 	[ 171846 ] 	= "motorcycle", -- Champion's Treadblade
+	-- Wolves
+	[ 580 ] 	= "wolf1", -- Timber Wolf
+	[ 64658 ] 	= "wolf1", -- Black Wolf
+	[ 6654 ] 	= "wolf1", -- Brown Wolf
+	[ 6653 ] 	= "wolf1", -- Dire Wolf
+	[ 16081 ] 	= "wolf1", -- Winter Wolf
+	[ 16080 ] 	= "wolf1", -- Red Wolf
+	[ 22724 ] 	= "wolf1", -- Black War Wolf
+	[ 23509 ] 	= "wolf1", -- Frostwolf Howler
+	[ 23250 ] 	= "wolf1", -- Swift Brown Wolf
+	[ 65646 ] 	= "wolf1", -- Swift Burgundy Wolf
+	[ 23252 ] 	= "wolf1", -- Swift Gray Wolf
+	[ 23251 ] 	= "wolf1", -- Swift Timber Wolf
+	[ 63640 ] 	= "wolf1", -- Orgrimmar Wolf
+	[ 68056 ] 	= "wolf1", -- Swift Horde Wolf
+	[ 100333 ] 	= "wolf1", -- Vicious War Wolf
+	[ 204166 ] 	= "wolf1", -- Prestigious War Wolf
+	[ 148396 ] 	= "wolf1", -- Kor'kron War Wolf
+	
+	[ 171851 ] 	= "wolf2", -- Garn Nighthowl
+	[ 186305 ] 	= "wolf2", -- Infernal Direwolf
+	[ 171841 ] 	= "wolf2", -- Trained Snarler
+	[ 171843 ] 	= "wolf2", -- Smoky Direwolf
+	[ 171842 ] 	= "wolf2", -- Swift Frostwolf
+	[ 171844 ] 	= "wolf2", -- Dustmane Direwolf
+	[ 171836 ] 	= "wolf2", -- Garn Steelmaw
+	[ 171837 ] 	= "wolf2", -- Warsong Direfang
+	[ 171839 ] 	= "wolf2", -- Ironside Warwolf
+	[ 171838 ] 	= "wolf2", -- Armored Frostwolf
+
+	[ 92232 ] 	= "wolf3", -- Spectral Wolf
 }

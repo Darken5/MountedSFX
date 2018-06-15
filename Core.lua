@@ -1,5 +1,5 @@
 -- Mounted SFX  by Darken5 --
---		Version 0.1.1	   --
+--		Version 0.1.2	   --
 -----------------------------
 MountedSFX_Enable = MountedSFX_Enable or true
 MountedSFX_Debug = MountedSFX_Debug or false
@@ -50,28 +50,49 @@ function MountedSFX_JumpOrAscendStart()
 				creatureName, spellID, _, active, _, _, _, _, _, _, _, mID = C_MountJournal.GetMountInfoByID(i)
 				i = i + 1
 			until ( active == true )
-		-- Debug 
+	-- Debug 
 		if MountedSFX_Debug == true then
 			print ( "|cff50c0ff" .. creatureName .. ": SpellID = " .. spellID .. ", mountID = " .. mID )
 		end
-		-- End Debug
+	-- End Debug
+
+	-- Mount Check
 			local MType = MountedID[spellID]
+		-- Horse
 			if MType == "horse" then
 				MountedSFX_PlayFile( Horse1 );
+		-- Felsaber
 			elseif MType == "felsaber" then
 				if currentSpeed == 0 then
 					MountedSFX_PlayFile( FelsaberRoar );
 				end
+		-- Hawkstrider
 			elseif MType == "hawkstrider" then
 				if currentSpeed == 0 then
 					MountedSFX_PlayFile( KwehS );
 				else
 					MountedSFX_PlayFile( KwehM );
 				end
+		-- Mechanostrider
 			elseif MType == "mechanostrider" then
 				MountedSFX_PlayFile( Cuckoo );
+		-- Motorcycle
 			elseif MType == "motorcycle" then
 				MountedSFX_PlayFile( MotorcycleRev1 );
+		-- Wolves
+			elseif MType == "wolf1" then
+				if currentSpeed == 0 then
+					MountedSFX_PlayFile( Wolf1 );
+				end
+			elseif MType == "wolf2" then
+				if currentSpeed == 0 then
+					MountedSFX_PlayFile( Wolf2 );
+				end
+			elseif MType == "wolf3" then
+				if currentSpeed == 0 then
+					MountedSFX_PlayFile( Wolf3 );
+				end
+		-- No Mount
 			elseif MountedID[spellID] == nil then
 				return
 			end
